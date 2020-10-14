@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="css/contact.css" type="text/css"/>
+</head>
+<body>
+    <header>
+        <section>
+          <div>
+            <a class="pagelink" href="vegetarian.html">Vegetarian</a>
+            <a class="pagelink" href="nonvegetarian.html">Non-Vegetarian</a>
+            <a class="pagelink" href="pastasandsoups.html">Pastas and Soups</a>
+            <a class="pagelink" href="kitchen_essentials.html"
+              >Kitchen Essentials</a
+            >
+          </div>
+          <div>
+            <a href="index.html">Claire's Cuisine</a>
+          </div>
+          <div>
+            <a class="navigation" href="sitemap.html">Sitemap</a>
+            <a class="navigation" href="contact.html">Contact</a>
+          </div>
+        </section>
+      </header>
+         <h1>Contact</h1>
+         <p>Thank you for visiting my website! Please feel free to contact me anytime via email: claireelliott1025@gmail.com. I will respond as quickly as I can. If you have questions or suggestions for a specific recipe, please fill out the form below.</p>
+
+      <div>
+          <h3>Recipe Questions/Feedback</h3>
+          <form>
+            <fieldset>
+                <legend class="title">Your Information:</legend>
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name here"
+                  maxlength="100"
+                />
+                <br />
+                <br />
+                <label for="email">Email:</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email here"
+                  maxlength="100"
+                />
+              </fieldset>
+              <br />
+              <fieldset>
+                <legend class="title">Questions/Feedback:</legend>
+                <label for="product select">What Category is the Recipe In?</label>
+                <select>
+                  <option value="vegetarian">Vegetarian</option>
+                  <option value="nonvegetarian">
+                    Non-Vegetarian
+                  </option>
+                  <option value="pastas and soups">
+                    Pastas and Soups
+                  </option>
+                </select>
+                <br />
+                <br />
+                <div>
+                    <label for="recipe name">Recipe Name:</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Enter Recipe Name Here"
+                      maxlength="100"
+                    />
+                </div>
+                <br />
+                <div>
+                  <div>
+                    <label for="comments">Questions:</label>
+                  </div>
+                  <div>
+                    <textarea
+                      id="comments"
+                      name="comments"
+                      rows="4"
+                      cols="60"
+                    ></textarea>
+                  </div>
+                </div>
+                <br />
+                <div>
+                  <input type="checkbox" id="updates" value="updates" checked />
+                  <label for="updates">Sign me up for email updates</label>
+                </div>
+                <br />
+                <button type="submit" name="submit-button">Submit</button>
+                <button type="reset" name="reset-button">Reset</button>
+              </fieldset>
+            </form>
+      </div>
+      <footer>
+        <a href="https://clairescuisine.com">Claire's Cuisine</a>
+        <div>
+            <h3>Top Recipes</h3>
+            <ul>
+                <li><a href="https://asimplepalate.com/blog/healthy-moroccan-spiced-chickpea-bowl/">Moroccan Bean Dish</a></li>
+                <li><a href="https://www.gimmesomeoven.com/jambalaya-recipe/">Jambalaya</a></li>
+                <li><a href="https://yupitsvegan.com/garlic-sesame-noodles/">Sesame Noodle Stir-Fry</a></li>
+                <li><a href="https://www.feastingathome.com/tomato-risotto/">Tomato and Saffron Risotto</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Helpful Links</h3>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Find a Recipe</h3>
+            <div class="search">
+                <input type="text" placeholder="Search.." />
+        </div>
+    </footer>
+</body>
+</html>

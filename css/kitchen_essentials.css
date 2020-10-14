@@ -1,0 +1,32 @@
+.accordion {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 75%;
+    height: 100px;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    z-index: 0;
+  }
+  .accordion:hover {
+    background-color: rgb(252, 232, 212);
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: peru;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
