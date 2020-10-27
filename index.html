@@ -4,82 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Claire's Cuisine Homepage</title>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine"
+  />
     <link rel="stylesheet" href="css/index.css" type="text/css"/>
   </head>
   <body>
-      <!--dont forget to make header position fixed-->
     <header>
       <section>
-        <div>
-          <a class="pagelink" href="vegetarian.html">Vegetarian</a>
-          <a class="pagelink" href="nonvegetarian.html">Non-Vegetarian</a>
-          <a class="pagelink" href="pastasandsoups.html">Pastas and Soups</a>
-          <a class="pagelink" href="kitchen_essentials.html"
-            >Kitchen Essentials</a
-          >
+        <div class="nav-left">
+          <ul>
+          <li><a class="pagelink" href="vegetarian.html">Vegetarian</a></li>
+          <li><a class="pagelink" href="nonvegetarian.html">Non-Vegetarian</a></li>
+          <li><a class="pagelink" href="pastasandsoups.html">Pastas and Soups</a></li>
+          <li><a class="pagelink" href="kitchen_essentials.html"
+            >Kitchen Essentials</a></li>
+          </ul>
         </div>
-        <div>
+        <div class="nav-middle">
           <a href="index.html">Claire's Cuisine</a>
         </div>
-        <div>
-          <a class="navigation" href="sitemap.html">Sitemap</a>
-          <a class="navigation" href="contact.html">Contact</a>
+        <div class="nav-right">
+          <ul>
+            <li><a class="navigation" href="sitemap.html">Sitemap</a></li>
+          <li><a class="navigation" href="contact.html">Contact</a></li>
+        </ul>
         </div>
       </section>
     </header>
     <section>
-      <img src="images/newhomepagepic.jpg" alt="gnocci bean stew" title="homepic" />
+      <img src="images/newhomepagepic.jpg" alt="gnocci bean stew" title="homepic" id="homepic" />
       <!--This will be the background image for the top 1/4th of the homepage. 
         I want the search bar below to overlay the image-->
-      <div class="search">
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <input type="text" placeholder="Search.." />
-        <!--How do I make the search bar have a button at the end that works-->
-      </div>
+      <form>
+        <input type="text" placeholder="Recipe Search.." name="searchbar" />
+        <button type="submit"><i class="searchbutton"></i>Search</button>
+      </form>
     </section>
-    <div>
+    <div class="latesthead">
         <h1>The Latest and Greatest</h1>
-        <a href="https://theveganatlas.com/white-bean-stew-with-sweet-potatoes-and-squash/">
-            <img src="images/sweetpotatostew.jpg" alt="white bean and fall veggies stew" title="white bean and fall veggies stew">
-        <div class="lgbutton">White Bean and Fall Veggies Stew</div></a>
-        <a href="https://www.bonappetit.com/recipe/chicken-tikka-masala"><img src="images/ba-tikka-masala-2.jpg" alt="tikka masala" title="tikka masala">
-        <div class="lgbutton">Chicken Tikka Masala</div></a>
-        <a href="https://www.delish.com/cooking/recipe-ideas/a25427692/sweet-potato-chili-recipe/">
-        <img src="images/delish-sweet-potato-chili-018-1544137528 (1).jpg" alt="sweet potato chili" title="sweet potato chili">
-        <div class="lgbutton">Sweet Potato Chili</div></a>
-
     </div>
     <div>
+      <table>
+        <tr>
+            <td> 
+                <span class="top"><img src="images/sweetpotatostew.jpg" alt="sweet potato stew" title="sweet potato stew"></span><br /><span class="bottom"
+                ><a href="https://theveganatlas.com/white-bean-stew-with-sweet-potatoes-and-squash/">White Bean and Fall Veggies Stew</a></span>
+            </td>
+            <td>
+                <span class="top"><img src="images/ba-tikka-masala-2.jpg" alt="chicken tikka masala" title="chicken tikka masala"></span><br /><span class="bottom"
+                ><a href="https://www.bonappetit.com/recipe/chicken-tikka-masala">Chicken Tikka Masala</a></span>
+            </td>
+            <td>
+                <span class="top"><img src="images/delish-sweet-potato-chili-018-1544137528 (1).jpg" alt="sweet potato chili" title="sweet potato chili"></span><br /><span class="bottom"
+                ><a href="https://www.delish.com/cooking/recipe-ideas/a25427692/sweet-potato-chili-recipe/">Sweet Potato Chili</a></span>
+            </td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <div>
+      <fieldset>
         <h3>Sign up for free weekly recipes!</h3>
+        <div>
         <label for="email"></label>
         <input
           type="text"
           name="email"
           id="email"
           placeholder="Enter your email here"
-          maxlength="100"
+          size="30"
         />
-        <!--How do I put the h3 and the email sign up bar next to eachother?-->
+        <input name="submit" type="button" value="SIGN UP!" id="submit" />
+      </div>
+      </fieldset>
     </div>
+    <br>
+    <br>
     <div>
         <h1>The New Necessities</h1>
-        <a href="kitchen_essentials.html">
-            <img src="images/chili-seasoning-web-3-of-4.jpg" alt="spices" title="spices">
-        <div class="lgbutton">Soup Spices</div></a>
-        <a href="kitchen_essentials.html">
-            <img src="images/paringknife.jpg" alt="paring knife" title="paring knife">
-            <div class="lgbutton">Paring Knife</div></a>
-        <a href="kitchen_essentials.html"><img src="images/squash-458023_960_720.jpg" alt="squash" title="squash">
-        <div class="lgbutton">Fall Veggies</div></a>
+        <table>
+          <tr>
+              <td> 
+                  <span class="top"><img src="images/chili-seasoning-web-3-of-4.jpg" alt="sweet potato stew" title="sweet potato stew"></span><br /><span class="bottom"
+                  ><a href="kitchen_essentials.html">Soup Spices</a></span>
+              </td>
+              <td>
+                  <span class="top"><img src="images/paringknife.jpg" alt="chicken tikka masala" title="chicken tikka masala"></span><br /><span class="bottom"
+                  ><a href="kitchen_essentials.html">Paring Knife</a></span>
+              </td>
+              <td>
+                  <span class="top"><img src="images/squash-458023_960_720.jpg" alt="sweet potato chili" title="sweet potato chili"></span><br /><span class="bottom"
+                  ><a href="kitchen_essentials.html">Fall Veggies</a></span>
+              </td>
+          </tr>
+        </table>
     </div>
-    <div>
-        <h1>About Me</h1>
-        <img src="images/IMG_1491 (2).JPG" alt="claire at tea" title="claire at tea"/>
+    <br>
+    <hr>
+    <div id="claires">
+      <img src="images/IMG_1491 (2).JPG" alt="claire at tea" title="claire at tea" id="tea"/>
+        <h1 id="claire">About Claire</h1>
         <p>Hello and welcome to the homebase for my food obsession! This site was created because I am not someone that comes up with my own recipes, I let the professionals handle that. I do however, love to eat! Therefore, I love trying new recipes and sharing my favorite ones with family and friends. Going to such an international college introduded me to flavors and dishes from around the world that I had never experiences before. Now I make a point to find recipes from everywhere on this earth to cook up and try myself! So basically, I work in strategic marketing by day and try recipes out by night! Please enjoy these recipes, they are my favorites! </p>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <footer>
-        <a href="https://clairescuisine.com">Claire's Cuisine</a>
+        <a href="https://clairescuisine.com" id="ftitle">Claire's Cuisine</a>
         <div>
             <h3>Top Recipes</h3>
             <ul>
