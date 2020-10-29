@@ -6,12 +6,15 @@ header {
   width: 100%;
   background-color: rgb(216, 150, 84);
 }
+body {
+  margin: 0;
+}
 .nav-left {
   float: left;
   padding-left: 20px;
   padding-top: 25px;
   padding-bottom: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 11pt;
 }
 .nav-middle {
@@ -26,7 +29,7 @@ header {
   padding-right: 20px;
   padding-top: 25px;
   padding-bottom: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 11pt;
 }
 .nav-left ul {
@@ -64,21 +67,21 @@ header {
 .nav-right li {
   float: right;
 }
-.nav-right li a{
+.nav-right li a {
   display: block;
   padding: 8px;
   text-decoration: none;
   color: black;
 }
 table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;  
-  }
-  img {
-      width: 300px;
-      height: 350px;
-  }
-  .filter {
-    text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+img {
+  width: 300px;
+  height: 350px;
+}
+.filter {
+  text-align: right;
 }
