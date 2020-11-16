@@ -43,11 +43,11 @@
          <h1>Contact</h1>
          <p>Thank you for visiting my website! Please feel free to contact me anytime via email: claireelliott1025@gmail.com. I will respond as quickly as I can. If you have questions or suggestions for a specific recipe, please fill out the form below.</p>
 
-      <div>
+      <div class="page">
           <h3>Recipe Questions/Feedback</h3>
           <form>
             <fieldset>
-                <legend class="title">Your Information:</legend>
+                <legend>Your Information:</legend>
                 <label for="name">Name:</label>
                 <input
                   type="text"
@@ -69,7 +69,7 @@
               </fieldset>
               <br />
               <fieldset>
-                <legend class="title">Questions/Feedback:</legend>
+                <legend>Questions/Feedback:</legend>
                 <label for="product select">What Category is the Recipe In?</label>
                 <select>
                   <option value="vegetarian">Vegetarian</option>
@@ -112,34 +112,39 @@
                   <label for="updates">Sign me up for email updates</label>
                 </div>
                 <br />
-                <button type="submit" name="submit-button">Submit</button>
-                <button type="reset" name="reset-button">Reset</button>
+                <button type="submit" id="submit" name="submit">Submit</button>
+                <button type="reset" id="reset" name="reset">Reset</button>
               </fieldset>
             </form>
       </div>
+      <br>
       <footer>
-        <a href="https://clairescuisine.com">Claire's Cuisine</a>
-        <div>
-            <h3>Top Recipes</h3>
-            <ul>
-                <li><a href="https://asimplepalate.com/blog/healthy-moroccan-spiced-chickpea-bowl/">Moroccan Bean Dish</a></li>
-                <li><a href="https://www.gimmesomeoven.com/jambalaya-recipe/">Jambalaya</a></li>
-                <li><a href="https://yupitsvegan.com/garlic-sesame-noodles/">Sesame Noodle Stir-Fry</a></li>
-                <li><a href="https://www.feastingathome.com/tomato-risotto/">Tomato and Saffron Risotto</a></li>
-            </ul>
+        <div class="end">
+          <div class="foot" id="foot1">
+          <a href="https://clairescuisine.com" id="ftitle">Claire's Cuisine</a>
         </div>
-        <div>
-            <h3>Helpful Links</h3>
-            <ul>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-            </ul>
+          <div class="foot" id="foot2">
+              <h3>Top Recipes</h3>
+              <ul>
+                  <li><a href="https://asimplepalate.com/blog/healthy-moroccan-spiced-chickpea-bowl/">Moroccan Bean Dish</a></li>
+                  <li><a href="https://www.gimmesomeoven.com/jambalaya-recipe/">Jambalaya</a></li>
+                  <li><a href="https://yupitsvegan.com/garlic-sesame-noodles/">Sesame Noodle Stir-Fry</a></li>
+                  <li><a href="https://www.feastingathome.com/tomato-risotto/">Tomato and Saffron Risotto</a></li>
+              </ul>
+          </div>
+          <div class="foot" id="foot3">
+              <h3>Helpful Links</h3>
+              <ul>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="sitemap.html">Sitemap</a></li>
+              </ul>
+          </div>
+          <div class="foot" id="foot4">
+              <h3>Find a Recipe</h3>
+              <div class="search">
+                  <input type="text" placeholder="Search.." />
+          </div>
         </div>
-        <div>
-            <h3>Find a Recipe</h3>
-            <div class="search">
-                <input type="text" placeholder="Search.." />
-        </div>
-    </footer>
+      </footer>
 </body>
 </html>

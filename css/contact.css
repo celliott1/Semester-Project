@@ -8,6 +8,31 @@ header {
 }
 body {
   margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  margin-top: 150px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.page {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+fieldset {
+  background-color:rgb(252, 232, 212);
+  border-radius: 5px;
+}
+legend {
+  background-color: firebrick;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: solid black 0.3px;
 }
 .nav-left {
   float: left;
@@ -73,3 +98,81 @@ body {
   text-decoration: none;
   color: black;
 }
+#submit {
+  width: 63px;
+  height: 27px;
+  border: 1px solid black;
+  background: firebrick;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#reset {
+  width: 63px;
+  height: 27px;
+  border: 1px solid black;
+  background: firebrick;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+footer {
+  background-color: rgb(216, 150, 84);
+  bottom: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+footer h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14pt;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+#ftitle {
+  font-size: 23pt;
+  font-weight: bold;
+}
+.end {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.foot {
+    padding: 10px;
+    width: 122px;
+    margin-left: 12px;
+    margin-top: 13px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11pt;
+}
+#foot1 {
+    width: 400px;
+
+}
+#foot2 {
+    width: 200px;
+}
+#foot3 {
+    width: 200px;
+}
+#foot4 {
+    width: 200px;
+}
+
+
+
