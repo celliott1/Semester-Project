@@ -110,6 +110,9 @@ legend {
   font-size: 13px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+#submit:hover {
+  background-color: rgb(112, 20, 20);
+}
 #reset {
   width: 63px;
   height: 27px;
@@ -121,6 +124,9 @@ legend {
   cursor: pointer;
   font-size: 13px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#reset:hover {
+  background-color: rgb(112, 20, 20);
 }
 footer {
   background-color: rgb(216, 150, 84);

@@ -75,6 +75,12 @@ body {
   text-decoration: none;
   color: black;
 }
+.nav-right li a:hover {
+  text-decoration: underline;
+}
+.nav-left li a:hover {
+  text-decoration: underline;
+}
 #homepic {
   margin: 0;
   padding: 0;
@@ -96,10 +102,10 @@ body {
 }
 .searchtype {
   width: 100%;
-  border: 3px solid black;
+  border: 3.5px solid black;
   border-right: none;
   padding: 5px;
-  height: 20px;
+  height: 30px;
   border-radius: 5px 0 0 5px;
   outline: none;
   background-color: transparent;
@@ -109,7 +115,7 @@ body {
 }
 .searchbutton {
   width: 90px;
-  height: 36px;
+  height: 46.5px;
   border: 1px solid black;
   background: black;
   text-align: center;
@@ -133,6 +139,7 @@ fieldset {
   font-size: 20pt;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
+  margin: 0;
 }
 #submit {
   background-color: black;
@@ -193,6 +200,9 @@ table td a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14pt;
 }
+table td a:hover {
+  text-decoration: underline;
+}
 table img {
   width: 340px;
   height: 390px;
@@ -226,7 +236,7 @@ hr {
   border: 3px solid black;
   border-right: none;
   padding: 5px;
-  height: 20px;
+  height: 27px;
   border-radius: 5px 0 0 5px;
   outline: none;
 }
@@ -234,8 +244,8 @@ hr {
   color: black;
 }
 #submit {
-  width: 90px;
-  height: 36px;
+  width: 95px;
+  height: 42px;
   border: 1px solid black;
   background: black;
   text-align: center;

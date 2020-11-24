@@ -108,6 +108,11 @@ h3 {
 .site a:hover {
   color: peru;
 }
+p {
+  margin-right: 10%;
+  margin-left: 10%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 footer {
   background-color: rgb(216, 150, 84);
   bottom: 0%;
