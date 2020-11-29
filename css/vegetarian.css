@@ -88,6 +88,7 @@ h1 {
   left: 77.5%;
   margin-left: -3px;
   margin-top: -70px;
+  z-index: -1;
 
 }
 hr {

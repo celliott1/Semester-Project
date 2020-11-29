@@ -105,9 +105,11 @@ h1 {
 .panel {
   padding: 0 18px;
   background-color: white;
-  display: none;
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  margin-left: 30%;
+  margin-right: 20%;
 }
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -119,6 +121,12 @@ h1 {
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.panel table {
+  width: 800px;
+}
+.panel td {
+  vertical-align: top;
 }
 .footer {
   position: fixed;

@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="recipes, asian recipes, italian recipes, vegetarian, north african recipes, morroccan recipes, spices, dinner recipes, healthy recipes"/>
     <title>Claire's Cuisine Homepage</title>
     <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Tangerine"
   />
+  <link rel="icon" href="images/favicon-32x32.png" type="image/png"/>
     <link rel="stylesheet" href="css/index.css" type="text/css"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8ZVRRZEDV"></script>
@@ -78,7 +80,7 @@
     <br>
     <div>
       <fieldset>
-        <h3>Sign up for free weekly recipes!</h3>
+        <h3 id="h31">Sign up for free weekly recipes!</h3>
         <div>
         <div class="email bar">
         <label for="email"></label>
@@ -118,7 +120,7 @@
     <br>
     <hr>
     <div id="claires">
-      <img src="images/IMG_1491 (2).JPG" alt="claire at tea" title="claire at tea" id="tea"/>
+      <img src="images/IMG_1491 (2).JPG" alt="tea" title="tea" id="tea" id="tea"/>
         <h2 id="claire">About Claire</h2>
         <p>Hello and welcome to the homebase for my food obsession! This site was created because I am not someone that comes up with my own recipes, I let the professionals handle that. I do however, love to eat! Therefore, I love trying new recipes and sharing my favorite ones with family and friends. Going to such an international college introduced me to flavors and dishes from around the world that I had never experiences before. Now I make a point to find recipes from everywhere on this earth to cook up and try myself! So basically, I work in marketing strategy by day and try recipes out by night! Please enjoy these recipes, they are my favorites! </p>
     </div>
@@ -150,5 +152,38 @@
         </div>
       </div>
     </footer>
+    <script>
+      function enlarge(){
+          let myimage = document.getElementById("tea");
+          let w = myimage.width;
+          w = w * 1.2;
+          myimage.width = w;
+      };
+
+      document.getElementById("tea").onmouseover = function () {
+        enlarge ();
+      } 
+      
+      function reduce(){
+          let myimage = document.querySelector("#tea");
+          let w = myimage.width;
+          w = w / 1.2;
+          myimage.width = w;
+
+      }
+
+      document.getElementById("tea").onmouseout = function () {
+        reduce ();
+      };
+
+      function signup() {
+        const h = document.querySelector("#h31");
+        h.style.color = "peru";
+        h.innerHTML = "Thanks!";
+      }
+      document.querySelector("#submit").onclick = signup;
+
+
+  </script>
   </body>
 </html>

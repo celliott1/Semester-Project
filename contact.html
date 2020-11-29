@@ -8,6 +8,7 @@
     rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Tangerine"
   />
+  <link rel="icon" href="images/favicon-32x32.png" type="image/png"/>
     <link rel="stylesheet" href="css/contact.css" type="text/css"/>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -146,5 +147,14 @@
           </div>
         </div>
       </footer>
+      <script>
+        function empty(){
+        const myform = document.querySelector("form");
+        if (myform["email"].value.length == 0){
+          alert("Enter a valid email address")
+        }
+      }
+        document.getElementById("submit").onclick = empty
+      </script>
 </body>
 </html>
