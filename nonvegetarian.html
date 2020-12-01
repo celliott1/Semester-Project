@@ -43,91 +43,164 @@
         </section>
       </header>
       <h1>Non-Vegetarian Recipes</h1>
+      <hr>
+      <div class="vl"></div>
       <div class="filter">
         <h3>Filter Recipes:</h3>
-        <ul>
-            <li>Asian</li>
-            <li>American</li>
-            <li>European</li>
-            <li>Hispanic</li>
-            <li>Indian</li>
-            <li>Mediterranean</li>
-            <li>North African</li>
-            <li>Low Carb</li>
-            <li>Low Calorie</li>
+        <ul id="myBtnContainer">
+          <li><label><input name="btn" type="radio" class="btn" onclick="filterSelection('Asian')"><span>Asian</span></label></li>
+          <li><label><input name="btn" type="radio" class="btn" onclick="filterSelection('American')"><span>American</span></label></li>
+          <li><label><input name="btn" type="radio" class="btn" onclick="filterSelection('Euro')"><span>European</span></label></li>
+          <li><label><input name="btn" type="radio" class="btn" onclick="filterSelection('His')"><span>Hispanic</span></label></li>
+          <li><label><input name="btn" type="radio" class="btn" onclick="filterSelection('Indian')"><span>Indian</span></label></li>
+          <li><label><input name="btn" type="radio" class="btn" onclick="filterSelection('Med')"><span>Mediterranean</span></label></li>
+          <li><label><input name="btn" type="radio" class="btn" onclick="filterSelection('NA')"><span>North African</span></label></li>
+          <li><label><input name="btn" type="radio" class="btn" onclick="filterSelection('Carb')"><span>Low Carb</span></label></li>
+          <li><label><input name="btn" type="radio" class="btn" onclick="filterSelection('Cal')"><span>Low Calorie</span></label></li>
+          <li><label><input name="btn" type="radio" class="btn active" onclick="filterSelection('all')"><span>Show All</span></label></li>
         </ul>
     </div>
       <div class="recipes">
         <p>
-            <table>
+            <table class="container">
                 <tr>
-                    <td> 
+                    <td class="filterDiv all Indian"> 
                         <span class="top"><img src="images/Easy_Homemade_Chicken_Curry_Low_Fodmap_FB_Thumbnail_copy.jpg" alt="chicken curry" title="chicken curry"></span><br /><span class="bottom"
                         ><a href="https://tasty.co/recipe/easy-homemade-chicken-curry">Chicken Curry</a></span>
                     </td>
-                    <td>
+                    <td class="filterDiv all American">
                         <span class="top"><img src="images/Red-Beans-and-RiceIMG_8715.jpg" alt="louisiana red beans and rice" title="louisiana red beans and rice"></span><br /><span class="bottom"
                         ><a href="https://damndelicious.net/2019/04/15/red-beans-and-rice/">Louisiana Red Beans and Rice</a></span>
                     </td>
-                    <td>
+                    <td class="filterDiv all Asian Cal Carb">
                         <span class="top"><img src="images/HLY_Curried_Chicken_Peas_Horizontal.jpg" alt="miso chicken stir fry" title="miso chicken stir fry"></span><br /><span class="bottom"
                         ><a href="https://www.bonappetit.com/recipe/chicken-and-beans-stir-fry">Miso Chicken Stir-Fry</a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td> 
+                    <td class="filterDiv all American Euro"> 
                         <span class="top"><img src="images/download.jpg" alt="american goulash" title="american goulash"></span><br /><span class="bottom"
                         ><a href="https://www.delish.com/cooking/recipe-ideas/recipes/a55501/best-goulash-recipe/">American Goulash</a></span>
                     </td>
-                    <td>
+                    <td class="filterDiv all Cal Carb">
                         <span class="top"><img src="images/26822849113_862a170468_c.jpg" alt="pesto chicken and veggies" title="pesto chicken and veggies"></span><br /><span class="bottom"
                         ><a href="https://juliasalbum.com/one-pan-pesto-chicken-and-veggies/">Pesto Chicken and Veggies</a></span>
                     </td>
-                    <td>
+                    <td class="filterDiv all Asian Carb">
                         <span class="top"><img src="images/cashewchicken-13.jpg" alt="cashew chicken" title="cashew chicken"></span><br /><span class="bottom"
                         ><a href="https://www.averiecooks.com/better-than-takeout-cashew-chicken/">Cashew Chicken</a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td> 
+                    <td class="filterDiv all American"> 
                         <span class="top"><img src="images/Cajun-Jambalaya-Recipe-with-Andouille-Sausage-Shrimp-and-Chicken-32.jpg" alt="jambalaya" title="jambalaya"></span><br /><span class="bottom"
                         ><a href="https://www.gimmesomeoven.com/jambalaya-recipe/">Jambalaya</a></span>
                     </td>
-                    <td>
+                    <td class="filterDiv all Euro Cal Carb">
                         <span class="top"><img src="images/Tuscan-Chicken-recipe-3.jpg" alt="tuscan chicken and cauli rice" title="tuscan chicken and cauli rice"></span><br /><span class="bottom"
                         ><a href="https://www.eatwell101.com/creamy-tuscan-chicken-meal-prep-recipe">Tuscan Chicken and Cauli Rice</a></span>
                     </td>
-                    <td>
+                    <td class="filterDiv all His Cal">
                         <span class="top"><img src="images/shot-5-0338-jpg-1526587417.jpg" alt="salsa verde chicken" title="salsa verde chicken"></span><br /><span class="bottom"
                         ><a href="https://www.delish.com/cooking/recipe-ideas/recipes/a50766/baked-salsa-verde-chicken-recipe/">Salsa Verde Chicken</a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td> 
+                    <td class="filterDiv all Med Cal Carb"> 
                         <span class="top"><img src="images/Mediterranean-Chicken-Broccoli-and-Tomato-Quinoa-Bowls-foodiecrush.com-003-768x1152.jpg" alt="mediterranean chicken quinoa bowl" title="mediterranean chicken quinoa bowl"></span><br /><span class="bottom"
                         ><a href="https://www.foodiecrush.com/mediterranean-chicken-quinoa-bowl-broccoli-tomato/">Mediterranean Chicken Quinoa Bowl</a></span>
                     </td>
-                    <td>
+                    <td class="filterDiv all Asian Cal Carb">
                         <span class="top"><img src="images/thai-coconut-grilled-chicken-thighs-01-768x1152.jpg" alt="thai coconut chicken" title="thai coconut chicken"></span><br /><span class="bottom"
                         ><a href="https://www.cookingclassy.com/thai-coconut-chicken/">Thai Coconut Chicken</a></span>
                     </td>
-                    <td>
+                    <td class="filterDiv all Indian">
                         <span class="top"><img src="images/Coconut-Curry-Chicken-7-768x1152.jpg" alt="quick chicken curry" title="quick chicken curry"></span><br /><span class="bottom"
                         ><a href="https://feelgoodfoodie.net/recipe/coconut-curry-chicken/">Quick Chicken Curry</a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td> 
+                    <td class="filterDiv all Asian Cal Carb"> 
                         <span class="top"><img src="images/gallery-1487255329-asian-chicken-saladl2.jpg" alt="asian chicken salad" title="asian chicken salad"></span><br /><span class="bottom"
                         ><a href="https://www.delish.com/cooking/recipe-ideas/recipes/a51581/asian-salad-recipe/">Asian Chicken Salad</a></span>
                     </td>
-                    <td>
+                    <td class="filterDiv all Indian">
                         <span class="top"><img src="images/ba-tikka-masala-2 (1).jpg" alt="chicken tikka masala" title="chicken tikka masala"></span><br /><span class="bottom"
                         ><a href="https://www.bonappetit.com/recipe/chicken-tikka-masala">Chicken Tikka Masala</a></span>
                     </td>
-                    <td>
+                    <td class="filterDiv all American Carb">
                         <span class="top"><img src="images/gallery-1464124241-delish-grilled-chicken-pineapple-salsa.jpg" alt="grilled honey lime chicken with pineapple salsa" title="grilled honey lime chicken with pineapple salsa"></span><br /><span class="bottom"
                         ><a href="https://www.delish.com/cooking/recipe-ideas/recipes/a47355/grilled-honey-lime-chicken-with-pineapple-salsa-recipe/">Grilled Honey Lime Chicken with Pineapple Salsa</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="filterDiv all Asian Cal Carb"> 
+                        <span class="top"><img src="images/Chicken-Stir-Fry-Chop-Suey-5.jpg" alt="chicken chop suey" title="chicken chop suey"></span><br /><span class="bottom"
+                        ><a href="https://www.recipetineats.com/chicken-stir-fry-chop-suey/">Chicken Chop Suey</a></span>
+                    </td>
+                    <td class="filterDiv all NA">
+                        <span class="top"><img src="images/North-African-Chicken-Rice_EXPS_THD17_205075_B08_15_8b-3-696x696.jpg" alt="north african chicken and rice" title="north african chicken and rice"></span><br /><span class="bottom"
+                        ><a href="https://www.tasteofhome.com/recipes/north-african-chicken-and-rice/">North African Chicken and Rice</a></span>
+                    </td>
+                    <td class="filterDiv all Asian Carb">
+                        <span class="top"><img src="images/gallery-1488466253-sesame-ginger-beef-stir-fryl5.jpg" alt="sesame ginger beef" title="sesame ginger beef"></span><br /><span class="bottom"
+                        ><a href="https://www.delish.com/cooking/recipe-ideas/recipes/a51791/sesame-ginger-beef-recipe/">Sesame Ginger Beef</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="filterDiv all American Cal Carb"> 
+                        <span class="top"><img src="images/Sausage-Vegetable-Skillet-Dinner_EXPS_SDAS17_133576_D04_04_4b-2-696x696.jpg" alt="sausage veggie skillet" title="sausage veggie skillet"></span><br /><span class="bottom"
+                        ><a href="https://www.tasteofhome.com/recipes/sausage-vegetable-skillet-dinner/">Sausage Veggie Skillet</a></span>
+                    </td>
+                    <td class="filterDiv all Asian Carb">
+                        <span class="top"><img src="images/exps186044_TH153340B09_25_3b-696x696.jpg" alt="beef and pepper stir-fry" title="beef and pepper stir-fry"></span><br /><span class="bottom"
+                        ><a href="https://www.tasteofhome.com/recipes/spicy-beef-pepper-stir-fry/">Beef and Pepper Stir-Fry</a></span>
+                    </td>
+                    <td class="filterDiv all American Carb Cal">
+                        <span class="top"><img src="images/Chicken-Goat-Cheese-Skillet_EXPS_SDAM17_136810_B12_08_4b-696x696.jpg" alt="chicken and goat cheese skillet" title="chicken and goat cheese skillet"></span><br /><span class="bottom"
+                        ><a href="https://www.tasteofhome.com/recipes/chicken-goat-cheese-skillet/">Chicken and Goat Cheese Skillet</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="filterDiv all American Indian Cal Carb"> 
+                        <span class="top"><img src="images/exps23334_TH153340D09_25_3b-696x696.jpg" alt="turkey marsala" title="turkey marsala"></span><br /><span class="bottom"
+                        ><a href="https://www.tasteofhome.com/recipes/turkey-marsala/">Turkey Marsala</a></span>
+                    </td>
+                    <td class="filterDiv all Asian Carb Cal">
+                        <span class="top"><img src="images/Chicken-Spanish-Cauliflower-Rice-_EXPS_SDAM17_199077_C12_07_1b-696x696.jpg" alt="chicken and spanish cauliflower rice" title="chicken and spanish cauliflower rice"></span><br /><span class="bottom"
+                        ><a href="https://www.tasteofhome.com/recipes/chicken-spanish-cauliflower-rice/">Chicken and Spanish Cauliflower Rice</a></span>
+                    </td>
+                    <td class="filterDiv all American Asian Carb Cal">
+                        <span class="top"><img src="images/Snow-Peas-Beef-Stir-Fry_exps94880_TH132767D04_25_1bC_RMS-1-696x696.jpg" alt="snow peas beef stir-fry" title="snow peas beef stir-fry"></span><br /><span class="bottom"
+                        ><a href="https://www.tasteofhome.com/recipes/snow-peas-beef-stir-fry/">Snow Peas and Beef Stir-Fry</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="filterDiv all His American Cal Carb"> 
+                        <span class="top"><img src="images/gallery-1490122445-delish-tex-mex-cauliflower-rice-pint-5 (1).jpg" alt="cheesy chicken and black bean" title="cheesy chicken and black bean"></span><br /><span class="bottom"
+                        ><a href="https://www.delish.com/cooking/recipe-ideas/recipes/a51950/cheesy-tex-mex-cauli-rice/">Cheesy Chicken & Black Bean Cauli Rice</a></span>
+                    </td>
+                    <td class="filterDiv all American Carb Cal">
+                        <span class="top"><img src="images/exps61540_SD163614C12_01_9b-696x696.jpg" alt="strawberry-blue-cheese-steak-salad" title="strawberry-blue-cheese-steak-salad"></span><br /><span class="bottom"
+                        ><a href="https://www.tasteofhome.com/recipes/strawberry-blue-cheese-steak-salad/">Strawberry-Blue Cheese Steak Salad</a></span>
+                    </td>
+                    <td class="filterDiv all American Carb Cal">
+                        <span class="top"><img src="images/Slow-Cooked-Caribbean-Pot-Roast_EXPS_SCMBZ17_46354_C01_18_4b-1-696x696.jpg" alt="caribbean pot roast" title="baribbean pot roast"></span><br /><span class="bottom"
+                        ><a href="https://www.tasteofhome.com/recipes/slow-cooked-caribbean-pot-roast/">Slow-Cooked Caribbean Pot Roast</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="filterDiv all American Cal Carb"> 
+                        <span class="top"><img src="images/Green-Pepper-Steak_EXPs_SDON17_3611_B06_30_1b-696x696.jpg" alt="green pepper steak" title="green pepper steak"></span><br /><span class="bottom"
+                        ><a href="https://www.tasteofhome.com/recipes/green-pepper-steak/">Green Pepper Steak</a></span>
+                    </td>
+                    <td class="filterDiv all American Carb Cal">
+                        <span class="top"><img src="images/exps53805_SD143207D05_29_2b_WEB-696x696.jpg" alt="chicken and spinach" title="chicken and spinach"></span><br /><span class="bottom"
+                        ><a href="https://www.tasteofhome.com/recipes/in-a-pinch-chicken-spinach/">Chicken & Spinach with Couscous</a></span>
+                    </td>
+                    <td class="filterDiv all American Asian Carb Cal">
+                        <span class="top"><img src="images/Spicy-Mongolian-Beef-Salad_EXPS_SDJJ17_86299_D02_10_3b-1-696x696.jpg" alt="mongolian beef salad" title="mongolian beef salad"></span><br /><span class="bottom"
+                        ><a href="https://www.tasteofhome.com/recipes/spicy-mongolian-beef-salad/">Mongolian Beef Salad</a></span>
                     </td>
                 </tr>
             </table>
@@ -162,5 +235,54 @@
           </div>
         </div>
       </footer>
+      <script>
+        filterSelection("all")
+function filterSelection(c) {
+let x, i;
+x = document.getElementsByClassName("filterDiv");
+if (c == "all") c = "";
+// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+for (i = 0; i < x.length; i++) {
+  w3RemoveClass(x[i], "show");
+  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+}
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+let i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+  if (arr1.indexOf(arr2[i]) == -1) {
+    element.className += " " + arr2[i];
+  }
+}
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+let i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+  while (arr1.indexOf(arr2[i]) > -1) {
+    arr1.splice(arr1.indexOf(arr2[i]), 1);
+  }
+}
+element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+let btnContainer = document.getElementById("myBtnContainer");
+let btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace("active", "");
+  this.className += "active";
+});
+}
+    </script>
 </body>
 </html>

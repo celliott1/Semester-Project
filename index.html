@@ -57,6 +57,7 @@
     </section>
     <div class="latesthead">
         <h1>The Latest and Greatest</h1>
+        <hr>
     </div>
     <div>
       <table>
@@ -82,24 +83,20 @@
       <fieldset>
         <h3 id="h31">Sign up for free weekly recipes!</h3>
         <div>
-        <div class="email bar">
-        <label for="email"></label>
-        <input
-          type="text"
-          name="email"
-          id="email"
-          placeholder="Enter your email here"
-          size="30"
-        />
-        <input name="submit" type="button" value="SIGN UP!" id="submit" />
+        <div class="emailbar">
+        <input type="text" class="email" placeholder="Enter your email here" name="email" size="40" />
+        <button id="submit" type="submit" class="emailbutton">SIGN UP!</button>
       </div>
     </div>
       </fieldset>
     </div>
     <br>
     <br>
-    <div>
+    <div class="latesthead">
         <h1>The New Necessities</h1>
+        <hr>
+    </div>
+    <div>
         <table>
           <tr>
               <td> 
@@ -122,7 +119,7 @@
     <div id="claires">
       <img src="images/IMG_1491 (2).JPG" alt="tea" title="tea" id="tea" id="tea"/>
         <h2 id="claire">About Claire</h2>
-        <p>Hello and welcome to the homebase for my food obsession! This site was created because I am not someone that comes up with my own recipes, I let the professionals handle that. I do however, love to eat! Therefore, I love trying new recipes and sharing my favorite ones with family and friends. Going to such an international college introduced me to flavors and dishes from around the world that I had never experiences before. Now I make a point to find recipes from everywhere on this earth to cook up and try myself! So basically, I work in marketing strategy by day and try recipes out by night! Please enjoy these recipes, they are my favorites! </p>
+        <p>Hello and welcome to the homebase for my food obsession! This site was created because I do not create my own recipes, I let the professionals handle that. I do however, love to eat! Therefore, I love trying new recipes and sharing my favorite ones with family and friends. As a result of attending a college with a large international population, I was introduced to flavors and dishes from around the world that I had never experienced before. Now I make a point to find recipes from everywhere on this earth to cook up and try myself! So basically, I work in marketing strategy by day and try recipes out by night! Please enjoy these recipes, they are my favorites! </p>
     </div>
     <footer>
       <div class="end">
@@ -178,8 +175,11 @@
 
       function signup() {
         const h = document.querySelector("#h31");
-        h.style.color = "peru";
+        const f = document.querySelector("fieldset");
+        h.style.color = "firebrick";
         h.innerHTML = "Thanks!";
+        f.style.backgroundColor = "rgb(216, 150, 84)"
+  
       }
       document.querySelector("#submit").onclick = signup;
 
